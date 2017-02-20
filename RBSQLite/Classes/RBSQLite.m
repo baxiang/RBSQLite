@@ -88,6 +88,10 @@ static BOOL LKDBNullIsEmptyString = NO;
 {
     return [self initWithDBPath:[RBSQLite getDBPathWithDBName:dbname]];
 }
+- (void)setDBName:(NSString *)dbName
+{
+    [self setDBPath:[RBSQLite getDBPathWithDBName:dbName]];
+}
 - (instancetype)initWithDBPath:(NSString *)filePath
 {
     if ([RBSQLUtils checkStringIsEmpty:filePath]) {
@@ -260,6 +264,15 @@ static BOOL LKDBNullIsEmptyString = NO;
 - (BOOL)updateToDB:(NSObject *)model where:(id)where
 {
     return [self updateToDBBase:model where:where];
+}
+- (void)updateToDB:(NSObject *)model where:(id)where callback:(void (^)(BOOL))block
+{
+    LKDBCode_Async_Begin;
+    BOOL result = [sself updateToDBBase:model where:where];
+    if (block) {
+        block(result);
+    }
+    LKDBCode_Async_End;
 }
 - (BOOL)deleteWithClass:(Class)modelClass where:(id)where
 {

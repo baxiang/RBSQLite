@@ -11,6 +11,17 @@
 #import "RBSQLite.h"
 @implementation NSObject (RBSQLite)
 
+
++ (NSInteger)rowCountWithWhere:(id)where, ...
+{
+    if ([where isKindOfClass:[NSString class]]) {
+        va_list list;
+        va_start(list, where);
+        where = [[NSString alloc] initWithFormat:where arguments:list];
+        va_end(list);
+    }
+    return [[self defaultSQLite] rowCount:self where:where];
+}
 - (BOOL)saveToDB
 {
     return [self.class insertToDB:self];
@@ -27,6 +38,16 @@
         return [[self defaultSQLite] updateToDB:model where:where];
     }
     return NO;
+}
++ (NSInteger)rowCountWithWhereFormat:(id)where, ...
+{
+    if ([where isKindOfClass:[NSString class]]) {
+        va_list list;
+        va_start(list, where);
+        where = [[NSString alloc] initWithFormat:where arguments:list];
+        va_end(list);
+    }
+    return [[self defaultSQLite] rowCount:self where:where];
 }
 - (BOOL)updateToDB
 {
@@ -85,6 +106,10 @@
             [self insertToDBWithArray:models filter:nil completed:completedBlock];
         });
     }
+}
++ (void)insertToDBWithArray:(NSArray *)models filter:(void (^)(id model, BOOL inserted, BOOL *rollback))filter
+{
+    [self insertToDBWithArray:models filter:filter completed:nil];
 }
 + (void)insertToDBWithArray:(NSArray *)models filter:(void (^)(id model, BOOL inserted, BOOL *rollback))filter completed:(void (^)(BOOL))completedBlock
 {
