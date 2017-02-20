@@ -9,5 +9,8 @@
 #import "RBPerson.h"
 
 @implementation RBPerson
-
++ (nullable NSString *)getPrimaryKey{
+    return @"personID";
+    
+}
 @end

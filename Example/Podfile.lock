@@ -1,0 +1,21 @@
+PODS:
+  - FMDB (2.6.2):
+    - FMDB/standard (= 2.6.2)
+  - FMDB/standard (2.6.2)
+  - RBSQLite (1.0.0):
+    - FMDB
+
+DEPENDENCIES:
+  - RBSQLite (from `../`)
+
+EXTERNAL SOURCES:
+  RBSQLite:
+    :path: ../
+
+SPEC CHECKSUMS:
+  FMDB: 854a0341b4726e53276f2a8996f06f1b80f9259a
+  RBSQLite: 186bbddba2675a0d8a7975d95740e45ed04c0325
+
+PODFILE CHECKSUM: d18bf9151501d65707f40a15ac12edd8285ee608
+
+COCOAPODS: 1.2.0

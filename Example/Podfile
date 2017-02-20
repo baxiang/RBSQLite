@@ -2,7 +2,7 @@ use_frameworks!
 
 target 'RBSQLite_Example' do
   pod 'RBSQLite', :path => '../'
-
+  
   target 'RBSQLite_Tests' do
     inherit! :search_paths
 

@@ -10,4 +10,9 @@
 
 @implementation RBDog
 
++ (nullable NSString *)getPrimaryKey{
+   return @"dogID";
+
+}
+
 @end

@@ -7,7 +7,12 @@
 //
 
 #import <Foundation/Foundation.h>
-
+#import "RBDog.h"
 @interface RBPerson : NSObject
-
+@property(nonatomic,strong) NSString *personID;
+@property(nonatomic,strong) NSString *name;
+@property(nonatomic,strong) NSNumber *age;
+@property(nonatomic,strong) NSString *nation;
+@property(nonatomic,strong) NSString *gender;
+@property(nonatomic,strong) RBDog *dog;
 @end

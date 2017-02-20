@@ -1,0 +1,979 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1F8D2D79F8DEBE06890513A113579B35 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 10CDBA40D8FADE4D123E89510348F945 /* Foundation.framework */; };
+		22554065FA07F1BFE5308A685394CB12 /* FMDatabaseQueue.h in Headers */ = {isa = PBXBuildFile; fileRef = 351F8E59854BCD39585AB8A055AC2F52 /* FMDatabaseQueue.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		34825C55C01D0F7C60DE88A752234DEA /* RBSQLite-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = FB4939219A7CD39562B4534C65E53DBE /* RBSQLite-dummy.m */; };
+		36B7EFD99C52F961A48656DB5FCEE9D5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 10CDBA40D8FADE4D123E89510348F945 /* Foundation.framework */; };
+		37F097E2269EF1BD238AD7449D796445 /* FMDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = ED48C0E1AA39302CCDD55032B7544B36 /* FMDatabase.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		39FF94B520ACF9D3139B745E8A561CDB /* Pods-RBSQLite_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D118BC697F4A0EE4D3746F93E715426C /* Pods-RBSQLite_Example-dummy.m */; };
+		3E43906B70EB01C06F3AE17008B853B9 /* FMResultSet.h in Headers */ = {isa = PBXBuildFile; fileRef = F1F546D17BEE96A3AC80F5733BACB23C /* FMResultSet.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		418B9D1DEA9CF0FB15664E594E8E208C /* RBSQLModel.h in Headers */ = {isa = PBXBuildFile; fileRef = F6C581CA0DE03642937EA1AEDACEC3E9 /* RBSQLModel.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4B007E3515C65C126A1F0B9085752823 /* NSObject+RBSQLModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 22E49C8B7E2358C134930BA9CD9F7A63 /* NSObject+RBSQLModel.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4BEE18385B4CF128614CA2D24003C145 /* RBSQLUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = 779CEE3CFF0B4C587FF36046833C6B7A /* RBSQLUtils.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4E6299FD8AF8E8C8725B5912D0D45E89 /* RBSQLite-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 562097E897BC9E7BB802640AD2B39F08 /* RBSQLite-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5031C365BF0B6CB608E88C91723920F4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 10CDBA40D8FADE4D123E89510348F945 /* Foundation.framework */; };
+		555B07A4AC92EE65630A00EB34886C57 /* Pods-RBSQLite_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 2DE3761D6E55A8C69827CDB099829D4F /* Pods-RBSQLite_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5D87F6E252D5ABC62BAFC3D3153C7C8D /* RBSQLUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C33016EF3707EB952E964C819C45471 /* RBSQLUtils.m */; };
+		5FD6B207CCAD823B3B281463BE68078A /* RBSQLite.m in Sources */ = {isa = PBXBuildFile; fileRef = C6E79DA636E6F1D345E7322790A6D753 /* RBSQLite.m */; };
+		6138CAEBD26BF161966DE6F5C7F1F47D /* NSObject+RBSQLite.m in Sources */ = {isa = PBXBuildFile; fileRef = 21F43841BD79DDEFDA785CC4240795D8 /* NSObject+RBSQLite.m */; };
+		7416E70742DBE89E1C25F1C8B748AEF6 /* Pods-RBSQLite_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = ED8219E8323569E0973D70F4B3E3E23F /* Pods-RBSQLite_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		81AD535013EF59A3EEB6C5CE15805215 /* RBSQLite.h in Headers */ = {isa = PBXBuildFile; fileRef = 081E0A914A61C2390D1C7DB3DBD91091 /* RBSQLite.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		87ECA447DB887426665260651B7F147E /* FMResultSet.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DF62A1F971FFFC84C36F474CF296297 /* FMResultSet.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		905B0606FC25501B30F34AFA2AA1CCCE /* Pods-RBSQLite_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = DA81BA54CF657EB56F35A32777E1EFEC /* Pods-RBSQLite_Tests-dummy.m */; };
+		96E70B43FC04BC99AED1BBD4FB1D7581 /* FMDB-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 774678108D22A09213789D973E2051AC /* FMDB-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9B8D84996694C541CD3434386E0A081A /* FMDatabasePool.h in Headers */ = {isa = PBXBuildFile; fileRef = 01C9B19641620A44266703CB7F104828 /* FMDatabasePool.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9C11A290C9C5866A185A54F1EC04E2BB /* FMDatabaseAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B97A597AFE8B5A90EDFF8560393C46B /* FMDatabaseAdditions.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		A1B5D80A8998311B8C9043E6942925E6 /* FMDatabaseQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F3E784FE473275B6CE21E9FC8AE454E /* FMDatabaseQueue.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		A3334D3FACFB89941D225DF01887768B /* NSObject+RBSQLite.h in Headers */ = {isa = PBXBuildFile; fileRef = 855E5512451C2C3D63FBC6B959CDB8A6 /* NSObject+RBSQLite.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A548833BE5FAD40830428F36E77D0F52 /* FMDatabaseAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = C4BBD76359D36C69E5804A290D1C5ED2 /* FMDatabaseAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BDF7C87F73FDD40C8D511504BEA9FAC8 /* NSObject+RBSQLModel.m in Sources */ = {isa = PBXBuildFile; fileRef = EC23C2FF51DA5EF797D2426E39E2903B /* NSObject+RBSQLModel.m */; };
+		BE5419F2AE59659ABFF7002879A616F0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 10CDBA40D8FADE4D123E89510348F945 /* Foundation.framework */; };
+		C605A44DF96E7FCACF7D6E37B62F795D /* FMDatabasePool.m in Sources */ = {isa = PBXBuildFile; fileRef = A2D2F8382360C935E0097F1CB2E26820 /* FMDatabasePool.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		C6E9CF4F211558BCC1D4222B8AFFED4D /* RBSQLModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 130EE990A4E100E7E2A44FF84FA65C28 /* RBSQLModel.m */; };
+		CCB74062CE0F4B8E5B7483599BC398DA /* FMDB.h in Headers */ = {isa = PBXBuildFile; fileRef = 73E08DD3F409CC910BDF9AAC0E1BEB35 /* FMDB.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D5991941DC41DDDDDACAE0B5D47A4639 /* FMDB-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D5085BA3C5279C337F6D921E5CAFB1FC /* FMDB-dummy.m */; };
+		E5FBF93579B66D2C4D006A727B96FE72 /* FMDB.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0078E8D5A781B47986A348FBCC779CF6 /* FMDB.framework */; };
+		F11FAB91014130EE233A3429439D38D7 /* FMDatabase.h in Headers */ = {isa = PBXBuildFile; fileRef = 6CFEEF64A76609C0E88017B38B7E12DA /* FMDatabase.h */; settings = {ATTRIBUTES = (Public, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		0597752528072580B06AEEDBEFB3E8D4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 251BAD17812F7EBF6532EACF66F941C3;
+			remoteInfo = FMDB;
+		};
+		46916144104D2E34C53DAA6CE2083C3A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 251BAD17812F7EBF6532EACF66F941C3;
+			remoteInfo = FMDB;
+		};
+		BCBBD427BAC437FDF8EAEA38892CF70E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 10974F2CF40552C55EC81F528CDE7EE3;
+			remoteInfo = RBSQLite;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0078E8D5A781B47986A348FBCC779CF6 /* FMDB.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FMDB.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		01C9B19641620A44266703CB7F104828 /* FMDatabasePool.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FMDatabasePool.h; path = src/fmdb/FMDatabasePool.h; sourceTree = "<group>"; };
+		081E0A914A61C2390D1C7DB3DBD91091 /* RBSQLite.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = RBSQLite.h; sourceTree = "<group>"; };
+		0C33016EF3707EB952E964C819C45471 /* RBSQLUtils.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = RBSQLUtils.m; sourceTree = "<group>"; };
+		10CDBA40D8FADE4D123E89510348F945 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		130EE990A4E100E7E2A44FF84FA65C28 /* RBSQLModel.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = RBSQLModel.m; sourceTree = "<group>"; };
+		1F3E784FE473275B6CE21E9FC8AE454E /* FMDatabaseQueue.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FMDatabaseQueue.m; path = src/fmdb/FMDatabaseQueue.m; sourceTree = "<group>"; };
+		1FB5E3A3CF3CBEF9FE323EA01A22156E /* RBSQLite-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "RBSQLite-prefix.pch"; sourceTree = "<group>"; };
+		21F43841BD79DDEFDA785CC4240795D8 /* NSObject+RBSQLite.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "NSObject+RBSQLite.m"; sourceTree = "<group>"; };
+		22E49C8B7E2358C134930BA9CD9F7A63 /* NSObject+RBSQLModel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NSObject+RBSQLModel.h"; sourceTree = "<group>"; };
+		28A119526D2C6FE5CD9387AA42F1A513 /* Pods-RBSQLite_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-RBSQLite_Example.release.xcconfig"; sourceTree = "<group>"; };
+		2DE3761D6E55A8C69827CDB099829D4F /* Pods-RBSQLite_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-RBSQLite_Example-umbrella.h"; sourceTree = "<group>"; };
+		347A707188D2ACEFD749D74A7F54FE28 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		351F8E59854BCD39585AB8A055AC2F52 /* FMDatabaseQueue.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FMDatabaseQueue.h; path = src/fmdb/FMDatabaseQueue.h; sourceTree = "<group>"; };
+		35B383F5019AFB99C540531F122E8843 /* Pods-RBSQLite_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-RBSQLite_Example.modulemap"; sourceTree = "<group>"; };
+		386FD7C53AA89B054C6B1CE534824F43 /* Pods-RBSQLite_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-RBSQLite_Tests-frameworks.sh"; sourceTree = "<group>"; };
+		3F3D4162F6512CA1204D3925F92774D3 /* RBSQLite.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = RBSQLite.framework; path = RBSQLite.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		468BEECA450744A0796052CDFF1DAFE2 /* Pods-RBSQLite_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-RBSQLite_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
+		4B97A597AFE8B5A90EDFF8560393C46B /* FMDatabaseAdditions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FMDatabaseAdditions.m; path = src/fmdb/FMDatabaseAdditions.m; sourceTree = "<group>"; };
+		562097E897BC9E7BB802640AD2B39F08 /* RBSQLite-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "RBSQLite-umbrella.h"; sourceTree = "<group>"; };
+		5686C6DA99F76CE61E674F7253A501AC /* Pods-RBSQLite_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-RBSQLite_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		5F0F56F19CC327C07915918234FDA631 /* Pods_RBSQLite_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_RBSQLite_Example.framework; path = "Pods-RBSQLite_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		60DD5257E0F49D56B1FA57A72D5E73BC /* Pods-RBSQLite_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-RBSQLite_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		642258DC9B2BA28773F9FD71D72C9FFE /* RBSQLite.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = RBSQLite.modulemap; sourceTree = "<group>"; };
+		6CFEEF64A76609C0E88017B38B7E12DA /* FMDatabase.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FMDatabase.h; path = src/fmdb/FMDatabase.h; sourceTree = "<group>"; };
+		713050D0CC9DDB201F041DAC03171634 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		73E08DD3F409CC910BDF9AAC0E1BEB35 /* FMDB.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FMDB.h; path = src/fmdb/FMDB.h; sourceTree = "<group>"; };
+		774678108D22A09213789D973E2051AC /* FMDB-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FMDB-umbrella.h"; sourceTree = "<group>"; };
+		779CEE3CFF0B4C587FF36046833C6B7A /* RBSQLUtils.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = RBSQLUtils.h; sourceTree = "<group>"; };
+		839E264158AFD424F2E4436EB0F06EBB /* RBSQLite.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = RBSQLite.xcconfig; sourceTree = "<group>"; };
+		855E5512451C2C3D63FBC6B959CDB8A6 /* NSObject+RBSQLite.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NSObject+RBSQLite.h"; sourceTree = "<group>"; };
+		87F0E43E2E65A637557E1BDC012B0131 /* Pods-RBSQLite_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-RBSQLite_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
+		8DF62A1F971FFFC84C36F474CF296297 /* FMResultSet.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FMResultSet.m; path = src/fmdb/FMResultSet.m; sourceTree = "<group>"; };
+		900712A18C22A236ABF9D680F81F08A7 /* Pods-RBSQLite_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-RBSQLite_Tests-resources.sh"; sourceTree = "<group>"; };
+		915DA9AF1E7E7E87A3BF08D8C48BFD34 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9879D497D3AB1A235AC95D25F794FF9E /* Pods_RBSQLite_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_RBSQLite_Tests.framework; path = "Pods-RBSQLite_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A2D2F8382360C935E0097F1CB2E26820 /* FMDatabasePool.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FMDatabasePool.m; path = src/fmdb/FMDatabasePool.m; sourceTree = "<group>"; };
+		A82124697E95B25065BF5AC6D962526C /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A9B5EA411D07D558177554431C48CD34 /* Pods-RBSQLite_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-RBSQLite_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		AA05207CBB8EDE2821D47B6A7B05355A /* Pods-RBSQLite_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-RBSQLite_Example-resources.sh"; sourceTree = "<group>"; };
+		B22114E7098BF8E52F899CCE1A91E6FE /* FMDB.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = FMDB.xcconfig; sourceTree = "<group>"; };
+		B97CC7F7ED98D85D31663DDFAF034BBC /* FMDB.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = FMDB.modulemap; sourceTree = "<group>"; };
+		BA5FF0015F55873272DDB0CBF18F3887 /* Pods-RBSQLite_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-RBSQLite_Example-frameworks.sh"; sourceTree = "<group>"; };
+		C2B644AA0ADCBF89048A48502320CE43 /* FMDB.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = FMDB.framework; path = FMDB.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C4BBD76359D36C69E5804A290D1C5ED2 /* FMDatabaseAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FMDatabaseAdditions.h; path = src/fmdb/FMDatabaseAdditions.h; sourceTree = "<group>"; };
+		C6E79DA636E6F1D345E7322790A6D753 /* RBSQLite.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = RBSQLite.m; sourceTree = "<group>"; };
+		C80DA57F8CD6FA6C1FE9516FC1FCBB41 /* FMDB-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FMDB-prefix.pch"; sourceTree = "<group>"; };
+		D118BC697F4A0EE4D3746F93E715426C /* Pods-RBSQLite_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-RBSQLite_Example-dummy.m"; sourceTree = "<group>"; };
+		D5085BA3C5279C337F6D921E5CAFB1FC /* FMDB-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "FMDB-dummy.m"; sourceTree = "<group>"; };
+		DA81BA54CF657EB56F35A32777E1EFEC /* Pods-RBSQLite_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-RBSQLite_Tests-dummy.m"; sourceTree = "<group>"; };
+		E880722FE8692A027FD82BABD9BA176B /* Pods-RBSQLite_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-RBSQLite_Example-acknowledgements.plist"; sourceTree = "<group>"; };
+		EC23C2FF51DA5EF797D2426E39E2903B /* NSObject+RBSQLModel.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "NSObject+RBSQLModel.m"; sourceTree = "<group>"; };
+		ED3FF31ECFC24098E02C5DA52FDE34A5 /* Pods-RBSQLite_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-RBSQLite_Tests.modulemap"; sourceTree = "<group>"; };
+		ED48C0E1AA39302CCDD55032B7544B36 /* FMDatabase.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FMDatabase.m; path = src/fmdb/FMDatabase.m; sourceTree = "<group>"; };
+		ED8219E8323569E0973D70F4B3E3E23F /* Pods-RBSQLite_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-RBSQLite_Tests-umbrella.h"; sourceTree = "<group>"; };
+		F1F546D17BEE96A3AC80F5733BACB23C /* FMResultSet.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FMResultSet.h; path = src/fmdb/FMResultSet.h; sourceTree = "<group>"; };
+		F6C581CA0DE03642937EA1AEDACEC3E9 /* RBSQLModel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = RBSQLModel.h; sourceTree = "<group>"; };
+		FB4939219A7CD39562B4534C65E53DBE /* RBSQLite-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "RBSQLite-dummy.m"; sourceTree = "<group>"; };
+		FCE8F4FB0180C41CD6BE083159DBFB55 /* Pods-RBSQLite_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-RBSQLite_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		054CD7F7E671861A2F94C1C09A6C1AE4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1F8D2D79F8DEBE06890513A113579B35 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0C8F8043340EE45F3194C8B16C70146E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5031C365BF0B6CB608E88C91723920F4 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BE42227A8D2F5E2A4524A74784B02020 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E5FBF93579B66D2C4D006A727B96FE72 /* FMDB.framework in Frameworks */,
+				BE5419F2AE59659ABFF7002879A616F0 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EEFB61A65EB8DA6653B544822EB9CE44 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				36B7EFD99C52F961A48656DB5FCEE9D5 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		252D2B07FD289102D0975954AEDABA14 /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				BBFFFADE8E6C1A463D754E0B6599A857 /* RBSQLite */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		2E8A70666402923F61614F521EE0CA29 /* FMDB */ = {
+			isa = PBXGroup;
+			children = (
+				F6DE655E75ADFE1AA964C216FFC0DF35 /* standard */,
+				B7ADE86BD1C1E36B1DE5372BFA4CDC0F /* Support Files */,
+			);
+			name = FMDB;
+			path = FMDB;
+			sourceTree = "<group>";
+		};
+		390CAE3E97AA732356E55C2993C41183 /* Pods-RBSQLite_Tests */ = {
+			isa = PBXGroup;
+			children = (
+				915DA9AF1E7E7E87A3BF08D8C48BFD34 /* Info.plist */,
+				ED3FF31ECFC24098E02C5DA52FDE34A5 /* Pods-RBSQLite_Tests.modulemap */,
+				60DD5257E0F49D56B1FA57A72D5E73BC /* Pods-RBSQLite_Tests-acknowledgements.markdown */,
+				87F0E43E2E65A637557E1BDC012B0131 /* Pods-RBSQLite_Tests-acknowledgements.plist */,
+				DA81BA54CF657EB56F35A32777E1EFEC /* Pods-RBSQLite_Tests-dummy.m */,
+				386FD7C53AA89B054C6B1CE534824F43 /* Pods-RBSQLite_Tests-frameworks.sh */,
+				900712A18C22A236ABF9D680F81F08A7 /* Pods-RBSQLite_Tests-resources.sh */,
+				ED8219E8323569E0973D70F4B3E3E23F /* Pods-RBSQLite_Tests-umbrella.h */,
+				FCE8F4FB0180C41CD6BE083159DBFB55 /* Pods-RBSQLite_Tests.debug.xcconfig */,
+				5686C6DA99F76CE61E674F7253A501AC /* Pods-RBSQLite_Tests.release.xcconfig */,
+			);
+			name = "Pods-RBSQLite_Tests";
+			path = "Target Support Files/Pods-RBSQLite_Tests";
+			sourceTree = "<group>";
+		};
+		4F5E6DDB9EACB47CCE0218BB9FAC1483 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C2B644AA0ADCBF89048A48502320CE43 /* FMDB.framework */,
+				5F0F56F19CC327C07915918234FDA631 /* Pods_RBSQLite_Example.framework */,
+				9879D497D3AB1A235AC95D25F794FF9E /* Pods_RBSQLite_Tests.framework */,
+				3F3D4162F6512CA1204D3925F92774D3 /* RBSQLite.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6513ECA391147A9DFC5B66568018BDC9 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				855E5512451C2C3D63FBC6B959CDB8A6 /* NSObject+RBSQLite.h */,
+				21F43841BD79DDEFDA785CC4240795D8 /* NSObject+RBSQLite.m */,
+				22E49C8B7E2358C134930BA9CD9F7A63 /* NSObject+RBSQLModel.h */,
+				EC23C2FF51DA5EF797D2426E39E2903B /* NSObject+RBSQLModel.m */,
+				081E0A914A61C2390D1C7DB3DBD91091 /* RBSQLite.h */,
+				C6E79DA636E6F1D345E7322790A6D753 /* RBSQLite.m */,
+				F6C581CA0DE03642937EA1AEDACEC3E9 /* RBSQLModel.h */,
+				130EE990A4E100E7E2A44FF84FA65C28 /* RBSQLModel.m */,
+				779CEE3CFF0B4C587FF36046833C6B7A /* RBSQLUtils.h */,
+				0C33016EF3707EB952E964C819C45471 /* RBSQLUtils.m */,
+			);
+			name = Classes;
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				252D2B07FD289102D0975954AEDABA14 /* Development Pods */,
+				D2304513832E75413DFDFE967D300314 /* Frameworks */,
+				BFB8C92E749ED180124155E2270474D2 /* Pods */,
+				4F5E6DDB9EACB47CCE0218BB9FAC1483 /* Products */,
+				A37606EF2C140C39B95B16B1DF47CB7B /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		8288966A6BD175B0B172F2EF524868C3 /* Pods-RBSQLite_Example */ = {
+			isa = PBXGroup;
+			children = (
+				347A707188D2ACEFD749D74A7F54FE28 /* Info.plist */,
+				35B383F5019AFB99C540531F122E8843 /* Pods-RBSQLite_Example.modulemap */,
+				468BEECA450744A0796052CDFF1DAFE2 /* Pods-RBSQLite_Example-acknowledgements.markdown */,
+				E880722FE8692A027FD82BABD9BA176B /* Pods-RBSQLite_Example-acknowledgements.plist */,
+				D118BC697F4A0EE4D3746F93E715426C /* Pods-RBSQLite_Example-dummy.m */,
+				BA5FF0015F55873272DDB0CBF18F3887 /* Pods-RBSQLite_Example-frameworks.sh */,
+				AA05207CBB8EDE2821D47B6A7B05355A /* Pods-RBSQLite_Example-resources.sh */,
+				2DE3761D6E55A8C69827CDB099829D4F /* Pods-RBSQLite_Example-umbrella.h */,
+				A9B5EA411D07D558177554431C48CD34 /* Pods-RBSQLite_Example.debug.xcconfig */,
+				28A119526D2C6FE5CD9387AA42F1A513 /* Pods-RBSQLite_Example.release.xcconfig */,
+			);
+			name = "Pods-RBSQLite_Example";
+			path = "Target Support Files/Pods-RBSQLite_Example";
+			sourceTree = "<group>";
+		};
+		A37606EF2C140C39B95B16B1DF47CB7B /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				8288966A6BD175B0B172F2EF524868C3 /* Pods-RBSQLite_Example */,
+				390CAE3E97AA732356E55C2993C41183 /* Pods-RBSQLite_Tests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		B7ADE86BD1C1E36B1DE5372BFA4CDC0F /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				B97CC7F7ED98D85D31663DDFAF034BBC /* FMDB.modulemap */,
+				B22114E7098BF8E52F899CCE1A91E6FE /* FMDB.xcconfig */,
+				D5085BA3C5279C337F6D921E5CAFB1FC /* FMDB-dummy.m */,
+				C80DA57F8CD6FA6C1FE9516FC1FCBB41 /* FMDB-prefix.pch */,
+				774678108D22A09213789D973E2051AC /* FMDB-umbrella.h */,
+				A82124697E95B25065BF5AC6D962526C /* Info.plist */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/FMDB";
+			sourceTree = "<group>";
+		};
+		BBFFFADE8E6C1A463D754E0B6599A857 /* RBSQLite */ = {
+			isa = PBXGroup;
+			children = (
+				F4217C4014C0A0743D9A42DA3F9CDB13 /* RBSQLite */,
+				EB1D88917E022FCD6D3B7558A5B1D9EE /* Support Files */,
+			);
+			name = RBSQLite;
+			path = ../..;
+			sourceTree = "<group>";
+		};
+		BFB8C92E749ED180124155E2270474D2 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				2E8A70666402923F61614F521EE0CA29 /* FMDB */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		D1697D94B9FDE6CD3E31C84261E12324 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				10CDBA40D8FADE4D123E89510348F945 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		D2304513832E75413DFDFE967D300314 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0078E8D5A781B47986A348FBCC779CF6 /* FMDB.framework */,
+				D1697D94B9FDE6CD3E31C84261E12324 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		EB1D88917E022FCD6D3B7558A5B1D9EE /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				713050D0CC9DDB201F041DAC03171634 /* Info.plist */,
+				642258DC9B2BA28773F9FD71D72C9FFE /* RBSQLite.modulemap */,
+				839E264158AFD424F2E4436EB0F06EBB /* RBSQLite.xcconfig */,
+				FB4939219A7CD39562B4534C65E53DBE /* RBSQLite-dummy.m */,
+				1FB5E3A3CF3CBEF9FE323EA01A22156E /* RBSQLite-prefix.pch */,
+				562097E897BC9E7BB802640AD2B39F08 /* RBSQLite-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/RBSQLite";
+			sourceTree = "<group>";
+		};
+		F4217C4014C0A0743D9A42DA3F9CDB13 /* RBSQLite */ = {
+			isa = PBXGroup;
+			children = (
+				6513ECA391147A9DFC5B66568018BDC9 /* Classes */,
+			);
+			name = RBSQLite;
+			path = RBSQLite;
+			sourceTree = "<group>";
+		};
+		F6DE655E75ADFE1AA964C216FFC0DF35 /* standard */ = {
+			isa = PBXGroup;
+			children = (
+				6CFEEF64A76609C0E88017B38B7E12DA /* FMDatabase.h */,
+				ED48C0E1AA39302CCDD55032B7544B36 /* FMDatabase.m */,
+				C4BBD76359D36C69E5804A290D1C5ED2 /* FMDatabaseAdditions.h */,
+				4B97A597AFE8B5A90EDFF8560393C46B /* FMDatabaseAdditions.m */,
+				01C9B19641620A44266703CB7F104828 /* FMDatabasePool.h */,
+				A2D2F8382360C935E0097F1CB2E26820 /* FMDatabasePool.m */,
+				351F8E59854BCD39585AB8A055AC2F52 /* FMDatabaseQueue.h */,
+				1F3E784FE473275B6CE21E9FC8AE454E /* FMDatabaseQueue.m */,
+				73E08DD3F409CC910BDF9AAC0E1BEB35 /* FMDB.h */,
+				F1F546D17BEE96A3AC80F5733BACB23C /* FMResultSet.h */,
+				8DF62A1F971FFFC84C36F474CF296297 /* FMResultSet.m */,
+			);
+			name = standard;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		34365582A65B7128BD674882761E6F49 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7416E70742DBE89E1C25F1C8B748AEF6 /* Pods-RBSQLite_Tests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3933A072EF8FAC07F81DBF425D76FB7F /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A3334D3FACFB89941D225DF01887768B /* NSObject+RBSQLite.h in Headers */,
+				4B007E3515C65C126A1F0B9085752823 /* NSObject+RBSQLModel.h in Headers */,
+				4E6299FD8AF8E8C8725B5912D0D45E89 /* RBSQLite-umbrella.h in Headers */,
+				81AD535013EF59A3EEB6C5CE15805215 /* RBSQLite.h in Headers */,
+				418B9D1DEA9CF0FB15664E594E8E208C /* RBSQLModel.h in Headers */,
+				4BEE18385B4CF128614CA2D24003C145 /* RBSQLUtils.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3D2A080C5CD4ED4520C6AEFA1D6BA26F /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F11FAB91014130EE233A3429439D38D7 /* FMDatabase.h in Headers */,
+				A548833BE5FAD40830428F36E77D0F52 /* FMDatabaseAdditions.h in Headers */,
+				9B8D84996694C541CD3434386E0A081A /* FMDatabasePool.h in Headers */,
+				22554065FA07F1BFE5308A685394CB12 /* FMDatabaseQueue.h in Headers */,
+				96E70B43FC04BC99AED1BBD4FB1D7581 /* FMDB-umbrella.h in Headers */,
+				CCB74062CE0F4B8E5B7483599BC398DA /* FMDB.h in Headers */,
+				3E43906B70EB01C06F3AE17008B853B9 /* FMResultSet.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E1489C4B18C1FBA67C45A8F432139541 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				555B07A4AC92EE65630A00EB34886C57 /* Pods-RBSQLite_Example-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		10974F2CF40552C55EC81F528CDE7EE3 /* RBSQLite */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 89B8C0D30A3ADED14EC0EF34C9B2D770 /* Build configuration list for PBXNativeTarget "RBSQLite" */;
+			buildPhases = (
+				800C9BE263B212C304DC899FEF829E6E /* Sources */,
+				BE42227A8D2F5E2A4524A74784B02020 /* Frameworks */,
+				3933A072EF8FAC07F81DBF425D76FB7F /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0955B357530AE6243A1C87A0339E2CCB /* PBXTargetDependency */,
+			);
+			name = RBSQLite;
+			productName = RBSQLite;
+			productReference = 3F3D4162F6512CA1204D3925F92774D3 /* RBSQLite.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		251BAD17812F7EBF6532EACF66F941C3 /* FMDB */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5B0566FF0CE681AC326D316CEC45A8CF /* Build configuration list for PBXNativeTarget "FMDB" */;
+			buildPhases = (
+				8FE0D4B503A94502F3431DC0DCB58040 /* Sources */,
+				EEFB61A65EB8DA6653B544822EB9CE44 /* Frameworks */,
+				3D2A080C5CD4ED4520C6AEFA1D6BA26F /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FMDB;
+			productName = FMDB;
+			productReference = C2B644AA0ADCBF89048A48502320CE43 /* FMDB.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		423943F7C05C52D60CE50E4387399BB4 /* Pods-RBSQLite_Example */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 724E1A8807E58A764570E20DEC767764 /* Build configuration list for PBXNativeTarget "Pods-RBSQLite_Example" */;
+			buildPhases = (
+				ECD112AF6AA7B4C2F521DB86E258EC99 /* Sources */,
+				0C8F8043340EE45F3194C8B16C70146E /* Frameworks */,
+				E1489C4B18C1FBA67C45A8F432139541 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D537C2DBF0F090F5BFB135AEAE70DA38 /* PBXTargetDependency */,
+				863B71D96D85E9EB99F12FA563E1C448 /* PBXTargetDependency */,
+			);
+			name = "Pods-RBSQLite_Example";
+			productName = "Pods-RBSQLite_Example";
+			productReference = 5F0F56F19CC327C07915918234FDA631 /* Pods_RBSQLite_Example.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		9302E299D081567798477D7B29F0F3F4 /* Pods-RBSQLite_Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 36D24092EE9A62189EB374D2219E0FCB /* Build configuration list for PBXNativeTarget "Pods-RBSQLite_Tests" */;
+			buildPhases = (
+				8656182EB4EF44F47EA6191DA8E628B8 /* Sources */,
+				054CD7F7E671861A2F94C1C09A6C1AE4 /* Frameworks */,
+				34365582A65B7128BD674882761E6F49 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-RBSQLite_Tests";
+			productName = "Pods-RBSQLite_Tests";
+			productReference = 9879D497D3AB1A235AC95D25F794FF9E /* Pods_RBSQLite_Tests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0700;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = 4F5E6DDB9EACB47CCE0218BB9FAC1483 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				251BAD17812F7EBF6532EACF66F941C3 /* FMDB */,
+				423943F7C05C52D60CE50E4387399BB4 /* Pods-RBSQLite_Example */,
+				9302E299D081567798477D7B29F0F3F4 /* Pods-RBSQLite_Tests */,
+				10974F2CF40552C55EC81F528CDE7EE3 /* RBSQLite */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		800C9BE263B212C304DC899FEF829E6E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6138CAEBD26BF161966DE6F5C7F1F47D /* NSObject+RBSQLite.m in Sources */,
+				BDF7C87F73FDD40C8D511504BEA9FAC8 /* NSObject+RBSQLModel.m in Sources */,
+				34825C55C01D0F7C60DE88A752234DEA /* RBSQLite-dummy.m in Sources */,
+				5FD6B207CCAD823B3B281463BE68078A /* RBSQLite.m in Sources */,
+				C6E9CF4F211558BCC1D4222B8AFFED4D /* RBSQLModel.m in Sources */,
+				5D87F6E252D5ABC62BAFC3D3153C7C8D /* RBSQLUtils.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8656182EB4EF44F47EA6191DA8E628B8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				905B0606FC25501B30F34AFA2AA1CCCE /* Pods-RBSQLite_Tests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8FE0D4B503A94502F3431DC0DCB58040 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				37F097E2269EF1BD238AD7449D796445 /* FMDatabase.m in Sources */,
+				9C11A290C9C5866A185A54F1EC04E2BB /* FMDatabaseAdditions.m in Sources */,
+				C605A44DF96E7FCACF7D6E37B62F795D /* FMDatabasePool.m in Sources */,
+				A1B5D80A8998311B8C9043E6942925E6 /* FMDatabaseQueue.m in Sources */,
+				D5991941DC41DDDDDACAE0B5D47A4639 /* FMDB-dummy.m in Sources */,
+				87ECA447DB887426665260651B7F147E /* FMResultSet.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ECD112AF6AA7B4C2F521DB86E258EC99 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				39FF94B520ACF9D3139B745E8A561CDB /* Pods-RBSQLite_Example-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		0955B357530AE6243A1C87A0339E2CCB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = FMDB;
+			target = 251BAD17812F7EBF6532EACF66F941C3 /* FMDB */;
+			targetProxy = 46916144104D2E34C53DAA6CE2083C3A /* PBXContainerItemProxy */;
+		};
+		863B71D96D85E9EB99F12FA563E1C448 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = RBSQLite;
+			target = 10974F2CF40552C55EC81F528CDE7EE3 /* RBSQLite */;
+			targetProxy = BCBBD427BAC437FDF8EAEA38892CF70E /* PBXContainerItemProxy */;
+		};
+		D537C2DBF0F090F5BFB135AEAE70DA38 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = FMDB;
+			target = 251BAD17812F7EBF6532EACF66F941C3 /* FMDB */;
+			targetProxy = 0597752528072580B06AEEDBEFB3E8D4 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		015A368F878AC3E2CEAE21DDE8026304 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		2A85255D548C7ACDBA2C8B8FA4B36C4E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A9B5EA411D07D558177554431C48CD34 /* Pods-RBSQLite_Example.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-RBSQLite_Example/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-RBSQLite_Example/Pods-RBSQLite_Example.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_RBSQLite_Example;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		41BC6B87C08DB82B28AFC277C6CEF78E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 839E264158AFD424F2E4436EB0F06EBB /* RBSQLite.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/RBSQLite/RBSQLite-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/RBSQLite/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/RBSQLite/RBSQLite.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = RBSQLite;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		44CDBB6D11DE06DB64D6268622BDC47E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		540A0FA738D826F1CCEB1ABFC5A0C605 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 839E264158AFD424F2E4436EB0F06EBB /* RBSQLite.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/RBSQLite/RBSQLite-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/RBSQLite/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/RBSQLite/RBSQLite.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = RBSQLite;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		55EFF8EB545D203C83181ECED6C59086 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FCE8F4FB0180C41CD6BE083159DBFB55 /* Pods-RBSQLite_Tests.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-RBSQLite_Tests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-RBSQLite_Tests/Pods-RBSQLite_Tests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_RBSQLite_Tests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		88116CC0B441A8A3BA358CBFA97E4AEC /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B22114E7098BF8E52F899CCE1A91E6FE /* FMDB.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/FMDB/FMDB-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/FMDB/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/FMDB/FMDB.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = FMDB;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		C7A83E20967EF45E2FBE63C80C7B372D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5686C6DA99F76CE61E674F7253A501AC /* Pods-RBSQLite_Tests.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-RBSQLite_Tests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-RBSQLite_Tests/Pods-RBSQLite_Tests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_RBSQLite_Tests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		F4389EF6CEB6EE6AA3C8B81C8863CF30 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 28A119526D2C6FE5CD9387AA42F1A513 /* Pods-RBSQLite_Example.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-RBSQLite_Example/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-RBSQLite_Example/Pods-RBSQLite_Example.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_RBSQLite_Example;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		FE622DC232237B3E91BF1E7BAA5A3A0D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B22114E7098BF8E52F899CCE1A91E6FE /* FMDB.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/FMDB/FMDB-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/FMDB/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/FMDB/FMDB.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = FMDB;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				015A368F878AC3E2CEAE21DDE8026304 /* Debug */,
+				44CDBB6D11DE06DB64D6268622BDC47E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		36D24092EE9A62189EB374D2219E0FCB /* Build configuration list for PBXNativeTarget "Pods-RBSQLite_Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				55EFF8EB545D203C83181ECED6C59086 /* Debug */,
+				C7A83E20967EF45E2FBE63C80C7B372D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5B0566FF0CE681AC326D316CEC45A8CF /* Build configuration list for PBXNativeTarget "FMDB" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FE622DC232237B3E91BF1E7BAA5A3A0D /* Debug */,
+				88116CC0B441A8A3BA358CBFA97E4AEC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		724E1A8807E58A764570E20DEC767764 /* Build configuration list for PBXNativeTarget "Pods-RBSQLite_Example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2A85255D548C7ACDBA2C8B8FA4B36C4E /* Debug */,
+				F4389EF6CEB6EE6AA3C8B81C8863CF30 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		89B8C0D30A3ADED14EC0EF34C9B2D770 /* Build configuration list for PBXNativeTarget "RBSQLite" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				540A0FA738D826F1CCEB1ABFC5A0C605 /* Debug */,
+				41BC6B87C08DB82B28AFC277C6CEF78E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}

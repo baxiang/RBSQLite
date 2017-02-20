@@ -1,0 +1,6 @@
+framework module RBSQLite {
+  umbrella header "RBSQLite-umbrella.h"
+
+  export *
+  module * { export * }
+}

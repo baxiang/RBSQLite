@@ -9,5 +9,8 @@
 #import <Foundation/Foundation.h>
 
 @interface RBDog : NSObject
-
+@property(nonatomic,strong) NSString *dogID;
+@property(nonatomic,strong) NSString *name;
+@property(nonatomic,strong) NSNumber *age;
+@property(nonatomic,strong) NSNumber *type;
 @end
