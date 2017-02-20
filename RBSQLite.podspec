@@ -1,7 +1,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'RBSQLite'
-  s.version="1.2.0"
+  s.version="1.2.1"
   s.summary          = 'A Cocoa / Objective-C wrapper around SQLite'
   s.homepage         = 'https://github.com/baxiang/RBSQLite'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
