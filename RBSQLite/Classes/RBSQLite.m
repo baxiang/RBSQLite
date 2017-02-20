@@ -95,13 +95,11 @@ static BOOL LKDBNullIsEmptyString = NO;
 - (instancetype)initWithDBPath:(NSString *)filePath
 {
     if ([RBSQLUtils checkStringIsEmpty:filePath]) {
-        ///release self
         self = nil;
         return nil;
     }
     
     RBSQLite *helper = [RBSQLite dbHelperWithPath:filePath save:nil];
-    
     if (helper) {
         self = helper;
     }
@@ -689,8 +687,7 @@ static BOOL LKDBNullIsEmptyString = NO;
     
     NSLog(@"%@",[[model class] getPrimaryKey]);
     // 拼接insertSQL 语句  采用 replace 插入
-    NSString *selectSQL = [NSString stringWithFormat:@"SELECT * FROM %@(%@) values(%@)",db_tableName,primaryKey,primaryValue];
-    
+   
    __block NSString *insertSQL = [NSString stringWithFormat:@"replace into %@(%@) values(%@)", db_tableName, insertKey, insertValuesString];
     
     __block BOOL execute = NO;
@@ -714,11 +711,7 @@ static BOOL LKDBNullIsEmptyString = NO;
     }];
     
     model.rowid = (NSInteger)lastInsertRowId;
-    
     [model setDb_inserting:NO];
-    
-    // callback
-    //[modelClass dbDidInserted:model result:execute];
     return execute;
 }
 - (void)fixSqlColumnsWithClass:(Class)clazz tableName:(NSString *)tableName

@@ -7,7 +7,6 @@
 //
 
 #import "NSObject+RBSQLite.h"
-#import "NSObject+RBSQLModel.h"
 #import "RBSQLite.h"
 @implementation NSObject (RBSQLite)
 

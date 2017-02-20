@@ -8,6 +8,7 @@
 
 #import <Foundation/Foundation.h>
 #import "NSObject+RBSQLModel.h"
+#import "NSObject+RBSQLite.h"
 #import "RBSQLUtils.h"
 #import "RBSQLModel.h"
 #import <FMDB/FMDatabase.h>
