@@ -88,12 +88,6 @@
 }
 
 
-
-+ (NSMutableArray *)searchWithSQL:(NSString *)sql
-{
-    return [[self defaultSQLite] searchWithSQL:sql toClass:self];
-}
-
 + (void)insertArrayByAsyncToDB:(NSArray *)models
 {
     [self insertArrayByAsyncToDB:models completed:nil];
@@ -134,7 +128,10 @@
         completedBlock(allInserted);
     }
 }
-
++ (NSMutableArray *)searchWithSQL:(NSString *)sql
+{
+    return [[self defaultSQLite] searchWithSQL:sql toClass:self];
+}
 + (NSMutableArray *)searchWithWhere:(id)where
 {
     return [[self defaultSQLite] search:self where:where orderBy:nil offset:0 count:0];
@@ -143,5 +140,8 @@
 {
     return [[self defaultSQLite] searchSingle:self where:where orderBy:orderBy];
 }
-
++ (NSMutableArray *)searchWithWhere:(id)where orderBy:(NSString *)orderBy offset:(NSInteger)offset count:(NSInteger)count
+{
+    return [[self defaultSQLite] search:self where:where orderBy:orderBy offset:offset count:count];
+}
 @end
