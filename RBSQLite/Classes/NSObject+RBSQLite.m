@@ -134,6 +134,11 @@
         completedBlock(allInserted);
     }
 }
+
++ (NSMutableArray *)searchWithWhere:(id)where
+{
+    return [[self defaultSQLite] search:self where:where orderBy:nil offset:0 count:0];
+}
 + (id)searchSingleWithWhere:(id)where orderBy:(NSString *)orderBy
 {
     return [[self defaultSQLite] searchSingle:self where:where orderBy:orderBy];

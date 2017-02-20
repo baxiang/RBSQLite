@@ -18,7 +18,7 @@ NS_ASSUME_NONNULL_BEGIN
 - (BOOL)deleteToDB;
 + (nullable NSMutableArray *)searchWithSQL:(NSString *)sql;
 
-
++ (nullable NSMutableArray *)searchWithWhere:(nullable id)where;
 + (nullable id)searchSingleWithWhere:(nullable id)where
                              orderBy:(nullable NSString *)orderBy;
 
