@@ -18,7 +18,10 @@ NS_ASSUME_NONNULL_BEGIN
 - (BOOL)deleteToDB;
 + (nullable NSMutableArray *)searchWithSQL:(NSString *)sql;
 
-///异步插入数据 async insert array ， completed 也是在子线程直接回调的
+
++ (nullable id)searchSingleWithWhere:(nullable id)where
+                             orderBy:(nullable NSString *)orderBy;
+
 + (void)insertArrayByAsyncToDB:(NSArray *)models;
 + (void)insertArrayByAsyncToDB:(NSArray *)models completed:(void (^)(BOOL allInserted))completedBlock;
 

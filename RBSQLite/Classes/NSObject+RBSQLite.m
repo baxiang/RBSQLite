@@ -134,6 +134,9 @@
         completedBlock(allInserted);
     }
 }
-
++ (id)searchSingleWithWhere:(id)where orderBy:(NSString *)orderBy
+{
+    return [[self defaultSQLite] searchSingle:self where:where orderBy:orderBy];
+}
 
 @end
